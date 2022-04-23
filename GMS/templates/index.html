@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 	<title>GMS</title>
 </head>
 <body>
@@ -25,11 +26,14 @@
 	<canvas id="Moist"></canvas>
 </div>
 
-<form method="POST" class="btns"> 
+<div class="btns">
+	
+<form method="POST" > 
 <a href="."><input type="submit" class="btn" name="ON" value="1"></a>
 <a href="."><input type="submit" class="btn" name="OFF" value="0"></a>
 </form>
 
+</div>
 </body>
 <script>
 const temprature = new Chart(document.getElementById('tempratureChart'), {
@@ -37,11 +41,12 @@ const temprature = new Chart(document.getElementById('tempratureChart'), {
     data: {
         labels: ['1', '2', '3', '4', '5', '6'],
         datasets: [{
+        	label: "tempratureChart",
             data: [12, 19, 3, 5, 2, 3],
            	fill: false,
 			lineTension: 0,
-            backgroundColor: "blue",
-            borderColor: "rgb(23, 226, 33)",
+            backgroundColor: "#FFF",
+            borderColor: "#FFF",
         }]
     },
     options: {
@@ -58,11 +63,12 @@ const humidityChart = new Chart(document.getElementById('humidityChart'), {
     data: {
         labels: ['1', '2', '3', '4', '5', '6'],
         datasets: [{
+        	label: "humidityChart",
             data: [12, 19, 3, 5, 2, 3],
            	fill: false,
 			lineTension: 0,
-            backgroundColor: "blue",
-            borderColor: "rgb(23, 226, 33)",
+            backgroundColor: "#FFF",
+            borderColor: "#FFF",
         }]
     },
     options: {
@@ -80,11 +86,12 @@ const Moist = new Chart(document.getElementById('Moist'), {
     data: {
         labels: ['1', '2', '3', '4', '5', '6'],
         datasets: [{
+        	label: "Moist",
             data: [12, 19, 3, 5, 2, 3],
            	fill: false,
 			lineTension: 0,
-            backgroundColor: "blue",
-            borderColor: "rgb(23, 226, 33)",
+            backgroundColor: "#FFF",
+            borderColor: "#FFF",
         }]
     },
     options: {

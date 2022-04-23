@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+}
+
+body{
+	width: 100%;
+	background-image:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) ),url("../static/sg.jpg");
+	background-size: cover;
+	background-position: center;
+	height:100vh;
+}
+
+h1{
+	height: 100px;
+	padding: 50px;
+	text-align: center;
+}
+
+.graph-container{
+	width: 70%;
+	margin-left: 15%;
+	height: 90px;
+}
+
+.humidity{
+	float: left;
+	width: 50%;
+}
+.temprature{
+	float: right;
+	width: 50%;
+}
+
+.Moist{
+	margin-left: 33%;
+	width: 35%;
+	height: 90px;
+}
