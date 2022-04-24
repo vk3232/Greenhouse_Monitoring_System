@@ -1,40 +1,72 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: Times New Roman;
 	color: #FFF;
 }
 
-body{
+
+main{
 	width: 100%;
-	background-image:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) ),url("../static/sg.jpg");
+	height: 100vh;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ),url("../static/sg.jpg");
 	background-size: cover;
-	background-position: center;
-	height:100vh;
+    background-position: center;
+}
+
+header{
+	display: flex;
+	justify-content: center;
+	padding-top: 100px;
+	color: #FFF;
 }
 
 h1{
-	height: 100px;
-	padding: 50px;
-	text-align: center;
+	margin-bottom: 100px;
 }
 
-.graph-container{
-	width: 70%;
-	margin-left: 15%;
-	height: 90px;
+.graphs{
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-left: 10%;
 }
 
-.humidity{
-	float: left;
-	width: 50%;
-}
-.temprature{
+.graph {
 	float: right;
-	width: 50%;
+	width: 47%;
+
 }
 
-.Moist{
-	margin-left: 33%;
-	width: 35%;
-	height: 90px;
+.graphs .form{
+	width: 47%;
+	float: left;
+	text-align: center;
+	justify-content: center;
+	padding-top: 50px;
+	color: #FFF;
+	height: 100%;
+}
+
+.graphs .form input{
+	margin-top: 50px;
+	color: #FFF;
+	font-size: 25px;
+	border: 4px solid white;
+	padding-top: 10px;
+	width: 30%;
+}
+
+.graphs .form input:hover{
+	box-shadow: 0px 0px 6px 1px #EEE;
+}
+
+@media screen and (max-width: 800px) {
+.graphs .form{
+	width: 100%;
+}
+.graphs .graph{
+	width: 100%;
+}	
 }
