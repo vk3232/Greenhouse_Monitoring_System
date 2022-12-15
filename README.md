@@ -5,7 +5,7 @@ It monitors environmental parameters such as humidity, temperature , moisture an
 
 **Website** :
 Made by Python Django framework
-Deployed by Heroku Platform
+Deployed by PyhtonAnywhere
 
 **Cloud Platform** :
 Thingspeak IoT Platform 
