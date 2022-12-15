@@ -22,9 +22,9 @@
                 </div>
                 {% endblock %}
                 <div class="form">
-                    {% csrf_token %}
                     <h2> Control the Regulation Of Water</h2>
                     <form method="POST" >
+                    {% csrf_token %}
                     <input type="submit" class="btn" name="ON" value="ON">
                     <input type="submit" class="btn" name="OFF" value="OFF">
                 </form>
